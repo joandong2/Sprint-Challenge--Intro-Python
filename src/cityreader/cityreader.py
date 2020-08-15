@@ -82,7 +82,30 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
     # within will hold the cities that fall within the specified region
     within = []
 
+    # lat1, lon1 = [int(x) for x in input("Enter first two value: ").split()]
+    # lat2, lon2 = [int(y) for y in input("Enter second two value: ").split()]
+
     # Go through each city and check to see if it falls within
     # the specified coordinates.
+    # with open("src/cityreader/cities.csv") as csvfile:
+    #     reader = csv.DictReader(csvfile)
+    #     for row in reader:
+    #         city = City(row["city"], float(row["lat"]), float(row["lng"]))
+    #         cities.append(city)
+
+    # if lat1 > lat2:
+    #     if lon1 > lon2:
+    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
+    #             c.lat <= lat1 and c.lat >= lat2) and (c.lon <= lon1 and c.lon >= lon2)]
+    #     else:
+    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
+    #             c.lat >= lat1 and c.lat <= lat2) and (c.lon >= lon1 and c.lon <= lon2)]
+    # else:
+    #     if lon1 > lon2:
+    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
+    #             c.lat <= lat2 and c.lat >= lat1) and (c.lon <= lon2 and c.lon >= lon1)]
+    #     else:
+    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
+    #             c.lat >= lat2 and c.lat <= lat1) and (c.lon >= lon2 and c.lon <= lon1)]
 
     return within

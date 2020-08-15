@@ -95,17 +95,17 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
 
     # if lat1 > lat2:
     #     if lon1 > lon2:
-    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
-    #             c.lat <= lat1 and c.lat >= lat2) and (c.lon <= lon1 and c.lon >= lon2)]
+    #         within = [(f"{c.name}: ({c.lat}, {c.lon}") for c in cities if (
+    #             (c.lat <= lat1 and c.lat >= lat2) and (c.lon <= lon1 and c.lon >= lon2))]
     #     else:
-    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
-    #             c.lat >= lat1 and c.lat <= lat2) and (c.lon >= lon1 and c.lon <= lon2)]
+    #         within = [(f"{c.name}: ({c.lat}, {c.lon})") for c in cities if (
+    #             (c.lat >= lat1 and c.lat <= lat2) and (c.lon >= lon1 and c.lon <= lon2))]
     # else:
     #     if lon1 > lon2:
-    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
-    #             c.lat <= lat2 and c.lat >= lat1) and (c.lon <= lon2 and c.lon >= lon1)]
+    #         within = [(f"{c.name}: ({c.lat}, {c.lon})") for c in cities if (
+    #             (c.lat <= lat2 and c.lat >= lat1) and (c.lon <= lon2 and c.lon >= lon1))]
     #     else:
-    #         within = [(f"{c.city}: "(c.lat, c.lon)) for c in cities if (
-    #             c.lat >= lat2 and c.lat <= lat1) and (c.lon >= lon2 and c.lon <= lon1)]
+    #         within = [(f"{c.name}: ({c.lat}, {c.lon})") for c in cities if (
+    #             (c.lat >= lat2 and c.lat <= lat1) and (c.lon >= lon2 and c.lon <= lon1))]
 
     return within
